@@ -1,0 +1,22 @@
+#root {
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+body{
+  background-color: white;
+}
+
+.toolbar > button {
+  border-radius: 0px;
+  margin-left: 5px;
+  height: 40px;
+  background-color:white;
+  border: 1px solid #555555;
+  color: #555555;
+}
+
+.selected {
+  background-color: #555555  !important;
+  color: white !important;
+}
