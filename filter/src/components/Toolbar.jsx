@@ -1,10 +1,14 @@
-export function Toolbar(props) {
+export default function Toolbar(props) {
   return (
     <div className="toolbar">
-      <button onClick={props.onSelectFilter}>All</button>
-      <button >Website</button>
-      <button >Flayers</button>
-      <button >Business Cards</button>
+      {props.filters.map((item, index) => {
+          if(item == props.selected){
+            return(<button className='selected' key={index} onClick={props.onSelectFilter}>{item}{' '}</button>)
+          } else {
+            return(<button key={index} onClick={props.onSelectFilter}>{item}{' '}</button>)
+          }
+        }
+      )}
     </div>
   )
 }
