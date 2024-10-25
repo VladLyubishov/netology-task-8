@@ -1,6 +1,6 @@
-import Toolbar from "./Toolbar";
 import React, { Component, useState, useEffect } from "react";
 import Cards from './ProjectList'
+import Toolbar from "./Toolbar";
 
 export class Portfolio extends Component{
 

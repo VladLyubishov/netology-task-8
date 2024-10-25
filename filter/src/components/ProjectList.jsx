@@ -60,7 +60,8 @@ export default function ProjectList(props) {
         return(
             <div className='portfolio'>
                 {cards.map((element, index) => {
-                    return(<img src={element.img} alt={element.category} key={index}/>)
+                    const className = `card-${(index % 3) + 1}`
+                    return(<img src={element.img} className={className} alt={element.category} key={index}/>)
                 })}
             </div>
         )
@@ -69,7 +70,8 @@ export default function ProjectList(props) {
             <div className='portfolio'>
                 {cards.map((element, index) => {
                     if (element.category == props.props) {
-                        return(<img src={element.img} alt={element.category} key={index}/>)
+                        const className = `card-${(index % 3) + 1}`
+                        return(<img src={element.img} alt={element.category} className={className} key={index}/>)
                     }
                 })}   
             </div>

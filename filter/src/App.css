@@ -1,13 +1,25 @@
 #root {
-  margin: 0 auto;
   padding: 2rem;
+  display: block;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  margin-left: 600px;
+  margin-right: 600px;
 }
 
-body{
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
   background-color: white;
+  display: block;
+  place-items: start;
 }
 
 .toolbar > button {
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
   border-radius: 0px;
   margin-left: 5px;
   height: 40px;
@@ -22,9 +34,32 @@ body{
 }
 
 .portfolio {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
-  gap: 20px; 
-  grid-auto-rows: minmax(100px, auto);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
+/* .card-1{
+  display: flex;
+  flex-wrap: column;
+}
+
+.card-2{
+  display: flex;
+  flex-wrap: column;
+}
+
+.card-3{
+  display: flex;
+flex-wrap: column;
+} */
+
+.portfolio > img {
+  width: calc(33.33% - 10px);
+  margin-bottom: 10px;
+}
+
+.toolbar{
+  margin-bottom: 20px;
+  display: block;
+}
