@@ -2,6 +2,8 @@ import ShopCard from './ShopCard';
 
 export default function CardsView(props) {
     return(
-        <ShopCard />
+        props.props.card.map(item => {
+            return <ShopCard props={item}/>
+        })
     )
 }
