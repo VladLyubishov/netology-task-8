@@ -40,3 +40,21 @@
 .read-the-docs {
   color: #888;
 }
+
+.imgCard {
+  width: 250px;
+  height: 220px;
+}
+
+.addToCart {
+  border-radius: 80px;
+  border: 1px solid transparent ;
+  border-color: red;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 1000;
+  font-family: inherit;
+  color: red;
+  background-color: white;
+  cursor: pointer;
+}

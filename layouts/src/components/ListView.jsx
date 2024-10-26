@@ -1,8 +1,9 @@
-import Icon from url('https://fonts.googleapis.com/icon?family=Material+Icons')
+import ShopCard from './ShopCard';
+
 export default function ListView(props) {
     return(
-        <div>
-           
-        </div>
+        props.items.map((item, index) => {
+            return <ShopCard item={{item: item, index: index}}/>
+        })
     )
 }
