@@ -1,9 +1,9 @@
-import ShopCard from './ShopCard';
+import ShopList from './ShopList';
 
 export default function ListView(props) {
     return(
         props.items.map((item, index) => {
-            return <ShopCard item={{item: item, index: index}}/>
+            return <ShopList item={{item: item, index: index}}/>
         })
     )
 }

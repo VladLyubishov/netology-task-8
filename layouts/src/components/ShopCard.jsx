@@ -5,7 +5,7 @@ export default function CardsView(props) {
            <h1 className="nameCard">{props.item.item.name}</h1>
            <h4 className="propertyCard">{props.item.item.color}</h4>
            <div className="priceCard">{`$${props.item.item.price}`}</div>
-           <button className="addToCart">ADD TO CARD</button>
+           <button className="addToCartCard">ADD TO CARD</button>
         </div>
     )
 }

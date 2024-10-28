@@ -1,9 +1,5 @@
-import Icon from 'https://fonts.googleapis.com/icon?family=Material+Icons'
-
 export default function IconSwitch(props) {
-    return(
-        <div>
-
-        </div>
+    return (
+        <button onClick={props.onSwitch}><i className='material-icons'>{props.icon}</i></button>
     )
 }
