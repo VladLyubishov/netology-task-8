@@ -4,7 +4,7 @@ import {products} from './products'
 import './App.css'
 function App() {
   return (
-    <Store props={products}/>
+    <Store products={products}/>
   )
 }
 export default App

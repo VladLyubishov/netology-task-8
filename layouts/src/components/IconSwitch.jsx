@@ -1,5 +1,5 @@
 export default function IconSwitch(props) {
     return (
-        <button onClick={props.onSwitch}><i className='material-icons'>{props.icon}</i></button>
+        <button onClick={props.onSwitch} className="buttonSwitch"><i className="material-icons icon">{props.icon}</i></button>
     )
 }
